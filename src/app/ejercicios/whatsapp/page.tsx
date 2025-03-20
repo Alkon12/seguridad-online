@@ -127,10 +127,6 @@ export default function EjerciciosWhatsApp() {
             <FaArrowLeft />
             <span>Volver a Ejercicios</span>
           </Link>
-          <Link href="/" className="flex items-center gap-2 text-gray-600 hover:text-gray-900">
-            <FaHome />
-            <span>Inicio</span>
-          </Link>
         </div>
         <div className="flex items-center gap-4">
           <div className="bg-green-100 dark:bg-green-900 px-4 py-2 rounded-lg">
