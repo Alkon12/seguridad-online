@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { FaExclamationTriangle, FaPhoneAlt, FaUserShield, FaCheck, FaTimes, FaCommentDots, FaLock } from "react-icons/fa";
+import { FaExclamationTriangle, FaPhoneAlt, FaUserShield, FaCheck, FaTimes, FaCommentDots, FaLock, FaGraduationCap, FaHome, FaArrowLeft } from "react-icons/fa";
 
 export default function Fraudes() {
   const [ejemplo1Respuesta, setEjemplo1Respuesta] = useState<string | null>(null);
@@ -12,14 +12,26 @@ export default function Fraudes() {
   return (
     <div className="flex flex-col items-center min-h-screen p-8 gap-8 font-[family-name:var(--font-geist-sans)]">
       <motion.header 
-        className="w-full max-w-4xl text-center mt-8"
+        className="w-full max-w-4xl flex items-center justify-between"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
+        <Link href="/" className="flex items-center gap-2 text-gray-600 hover:text-gray-900">
+          <FaArrowLeft />
+          <span>Volver al Inicio</span>
+        </Link>
+      </motion.header>
+
+      <motion.div
+        className="w-full max-w-4xl text-center mb-8"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.1 }}
+      >
         <h1 className="text-4xl md:text-5xl font-bold mb-4">Fraudes en Línea y Llamadas Sospechosas</h1>
         <p className="text-xl md:text-2xl">Aprenda a identificar estafas comunes y proteger su información personal</p>
-      </motion.header>
+      </motion.div>
 
       <main className="w-full max-w-4xl flex flex-col gap-12">
         {/* Video de introducción */}
@@ -453,8 +465,9 @@ export default function Fraudes() {
           <Link href="/phishing" className="bg-gray-200 dark:bg-gray-800 px-6 py-3 rounded-full text-xl font-medium hover:opacity-90 transition-all flex items-center gap-2">
             ← Phishing
           </Link>
-          <Link href="/" className="bg-foreground text-background px-6 py-3 rounded-full text-xl font-medium hover:opacity-90 transition-all flex items-center gap-2">
-            Regresar al Inicio
+          <Link href="/ejercicios" className="bg-foreground text-background px-6 py-3 rounded-full text-xl font-medium hover:opacity-90 transition-all flex items-center gap-2">
+            <FaGraduationCap />
+            Seguir Practicando
           </Link>
         </div>
       </main>

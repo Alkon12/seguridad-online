@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { FaShieldAlt, FaUnlockAlt, FaExclamationTriangle } from "react-icons/fa";
+import { FaShieldAlt, FaUnlockAlt, FaExclamationTriangle, FaGraduationCap } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -13,7 +13,7 @@ export default function Home() {
       </header>
 
       <main className="w-full max-w-4xl flex flex-col gap-8">
-        <section className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <section className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <motion.div
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
@@ -59,6 +59,22 @@ export default function Home() {
               </div>
               <h2 className="text-2xl font-bold mb-2">Fraudes y Estafas</h2>
               <p className="text-lg">Protéjase de estafas comunes y llamadas sospechosas</p>
+            </Link>
+          </motion.div>
+
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4 }}
+          >
+            <Link href="/ejercicios" className="bg-red-100 dark:bg-red-900 rounded-xl p-6 flex flex-col items-center text-center hover:shadow-lg transition-all h-70">
+              <div className="bg-red-200 dark:bg-red-800 p-4 rounded-full mb-4 text-4xl text-red-700 dark:text-red-300">
+                <FaGraduationCap />
+              </div>
+              <h2 className="text-2xl font-bold mb-2">Ejercicios Prácticos</h2>
+              <p className="text-lg">Practique lo aprendido con ejercicios interactivos y juegos educativos</p>
             </Link>
           </motion.div>
         </section>

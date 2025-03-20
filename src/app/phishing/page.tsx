@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { FaUnlockAlt, FaEnvelope, FaExclamationTriangle, FaCheck, FaTimes, FaUserShield } from "react-icons/fa";
+import { FaUnlockAlt, FaEnvelope, FaExclamationTriangle, FaCheck, FaTimes, FaUserShield, FaHome, FaArrowLeft } from "react-icons/fa";
 
 export default function Phishing() {
   const [example1Answer, setExample1Answer] = useState<string | null>(null);
@@ -12,14 +12,26 @@ export default function Phishing() {
   return (
     <div className="flex flex-col items-center min-h-screen p-8 gap-8 font-[family-name:var(--font-geist-sans)]">
       <motion.header 
-        className="w-full max-w-4xl text-center mt-8"
+        className="w-full max-w-4xl flex items-center justify-between"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">Identificación de Phishing</h1>
-        <p className="text-xl md:text-2xl">Aprenda a reconocer correos maliciosos y proteger su información</p>
+        <Link href="/" className="flex items-center gap-2 text-gray-600 hover:text-gray-900">
+          <FaArrowLeft />
+          <span>Volver al Inicio</span>
+        </Link>
       </motion.header>
+
+      <motion.div
+        className="w-full max-w-4xl text-center mb-8"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.1 }}
+      >
+        <h1 className="text-4xl md:text-5xl font-bold mb-4">Identificar Phishing</h1>
+        <p className="text-xl md:text-2xl">Aprenda a detectar correos electrónicos y sitios web fraudulentos</p>
+      </motion.div>
 
       <main className="w-full max-w-4xl flex flex-col gap-12">
         {/* Video de introducción */}

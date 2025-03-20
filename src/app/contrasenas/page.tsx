@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { FaShieldAlt, FaLock, FaKey, FaCheck, FaTimes } from "react-icons/fa";
+import { FaShieldAlt, FaLock, FaKey, FaCheck, FaTimes, FaHome, FaArrowLeft } from "react-icons/fa";
 import { useState, useEffect } from "react";
 
 export default function Contrasenas() {
@@ -82,14 +82,26 @@ export default function Contrasenas() {
   return (
     <div className="flex flex-col items-center min-h-screen p-8 gap-8 font-[family-name:var(--font-geist-sans)]">
       <motion.header 
-        className="w-full max-w-4xl text-center mt-8"
+        className="w-full max-w-4xl flex items-center justify-between"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">Contraseñas Seguras</h1>
-        <p className="text-xl md:text-2xl">Aprenda a crear y gestionar contraseñas que lo mantengan protegido</p>
+        <Link href="/" className="flex items-center gap-2 text-gray-600 hover:text-gray-900">
+          <FaArrowLeft />
+          <span>Volver al Inicio</span>
+        </Link>
       </motion.header>
+
+      <motion.div
+        className="w-full max-w-4xl text-center mb-8"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.1 }}
+      >
+        <h1 className="text-4xl md:text-5xl font-bold mb-4">Contraseñas Seguras</h1>
+        <p className="text-xl md:text-2xl">Aprenda a crear y gestionar contraseñas seguras</p>
+      </motion.div>
 
       <main className="w-full max-w-4xl flex flex-col gap-12">
         {/* Video de introducción */}
