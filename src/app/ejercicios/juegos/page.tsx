@@ -55,10 +55,6 @@ export default function JuegosSeguridad() {
             <FaArrowLeft />
             <span>Volver a Ejercicios</span>
           </Link>
-          <Link href="/" className="flex items-center gap-2 text-gray-600 hover:text-gray-900">
-            <FaHome />
-            <span>Inicio</span>
-          </Link>
         </div>
         <div className="flex items-center gap-2">
           <FaGamepad className="text-2xl text-red-500" />

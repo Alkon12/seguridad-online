@@ -197,10 +197,6 @@ export default function DetectiveDigital() {
             <FaArrowLeft />
             <span>Volver a Juegos</span>
           </Link>
-          <Link href="/" className="flex items-center gap-2 text-gray-600 hover:text-gray-900">
-            <FaHome />
-            <span>Inicio</span>
-          </Link>
         </div>
         <div className="flex items-center gap-2">
           <FaUserSecret className="text-2xl text-red-500" />
