@@ -116,7 +116,7 @@ export default function Contrasenas() {
             Video: Importancia de las Contraseñas Seguras
           </h2>
           <div className="aspect-video bg-gray-200 dark:bg-gray-800 rounded-lg flex items-center justify-center mb-6">
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/boQKl5BkPfs?si=Ehb4sX5Q2vToe5CI&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/boQKl5BkPfs?si=Ehb4sX5Q2vToe5CI&amp;controls=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
           </div>
           <div className="text-lg space-y-4">
             <p>En este video, aprenderá por qué las contraseñas seguras son su primera línea de defensa en internet.</p>
