@@ -46,7 +46,7 @@ export default function Fraudes() {
             Video: Tipos de Fraudes Comunes
           </h2>
           <div className="aspect-video bg-gray-200 dark:bg-gray-800 rounded-lg flex items-center justify-center mb-6">
-            <p className="text-lg">Video embed - Explicación sobre fraudes comunes</p>
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/VlGQjY3aEFs?si=ujB1b3wq5scSH9HG&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
           <div className="text-lg space-y-4">
             <p>En este video, conocerá los fraudes más habituales y cómo evitar caer en ellos.</p>
